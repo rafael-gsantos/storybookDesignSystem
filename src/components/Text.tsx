@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 
 
 export interface TextProps{
-    size?: 'sm' | 'md' | 'lg';
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
     children: ReactNode;
     asChild?: boolean;
 }
@@ -15,11 +15,12 @@ export function Text({ size = 'md', children, asChild }: TextProps) {
 
     return(
         <Comp className={clsx(
-            'text-gray-500 font-sans', { 
-                'text-xs': size === 'sm',
-                'text-sm': size === 'md',
-                'text-md': size === 'lg',
-
+            'text-gray-500 font-sans', {
+                'text-xs': size === 'xs',
+                'text-sm': size === 'sm',
+                'text-md': size === 'md',
+                'text-lg': size === 'lg',
+                'text-xl': size === 'xl',
             } 
         )}
         >

@@ -7,11 +7,11 @@ export default {
   component: Heading,
   args: {
     children: 'Lorem ipsum.',
-    size: 'md',
+    size: 'h2',
   },
   argTypes: {
     size:{
-        options: ['sm' , 'md' , 'lg'],
+        options: [ 'h1' , 'h2' , 'h3' , 'h4' , 'h5' , 'h6'],
         control: {
             type: 'inline-radio',
         }
@@ -21,17 +21,111 @@ export default {
 } as Meta<HeadingProps>
 
 
-export const Default: StoryObj<HeadingProps> = {}
-
-export const Small: StoryObj<HeadingProps> = {
+export const H1: StoryObj<HeadingProps> = {
     args:{
-        size: 'sm',
+        size: 'h1'
+    },
+    argTypes: {
+        children: {
+            table: {
+                disable: true,
+            }
+        },
+        asChild: {
+            table: {
+                disable: true,
+            }
+        },
     }
 }
 
-export const Large: StoryObj<HeadingProps> = {
+export const H2: StoryObj<HeadingProps> = {
     args:{
-        size: 'lg',
+        size: 'h2',
+    },
+    argTypes: {
+        children: {
+            table: {
+                disable: true,
+            }
+        },
+        asChild: {
+            table: {
+                disable: true,
+            }
+        },
+    }
+}
+
+export const H3: StoryObj<HeadingProps> = {
+    args:{
+        size: 'h3',
+    },
+    argTypes: {
+        children: {
+            table: {
+                disable: true,
+            }
+        },
+        asChild: {
+            table: {
+                disable: true,
+            }
+        },
+    }
+}
+
+export const H4: StoryObj<HeadingProps> = {
+    args: {
+        size: 'h4'
+    },
+    argTypes: {
+        children: {
+            table: {
+                disable: true,
+            }
+        },
+        asChild: {
+            table: {
+                disable: true,
+            }
+        },
+    }
+}
+
+export const H5: StoryObj<HeadingProps> = {
+    args: {
+        size: 'h5',
+    },
+    argTypes: {
+        children: {
+            table: {
+                disable: true,
+            }
+        },
+        asChild: {
+            table: {
+                disable: true,
+            }
+        },
+    }
+}
+
+export const H6: StoryObj<HeadingProps> = {
+    args: {
+        size: 'h6',
+    },
+    argTypes: {
+        children: {
+            table: {
+                disable: true,
+            }
+        },
+        asChild: {
+            table: {
+                disable: true,
+            }
+        },
     }
 }
 
@@ -39,7 +133,7 @@ export const CustomComponent: StoryObj<HeadingProps> = {
     args: {
         asChild: false,
         children: (
-            <h1>Heading with H1</h1>
+            <h2>Custom Example</h2>
         )
     }, 
     argTypes: {

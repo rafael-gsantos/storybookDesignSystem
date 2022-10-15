@@ -5,12 +5,17 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      '2xl': 32,
-      'xl': 24,
-      'lg': 20,
-      'md': 18,
-      'sm': 16,
-      'xs': 14,
+      'h1': '64px',
+      'h2': '48px',
+      'h3': '32px',
+      'h4': '24px',
+      'h5': '18px',
+      'h6': '14px',
+      'xl':'24px',
+      'lg': '20px',
+      'md': '16px',
+      'sm': '12px',
+      'xs': '10px',
     },
     colors: {
       transparent: 'transparent',
@@ -20,8 +25,8 @@ module.exports = {
         500: '#DED7EA',
       },
       pink:{
-        500: '#C4A6EE',
-        600: '#D9BEFF',
+        300: '#C4A6EE',
+        400: '#D9BEFF',
       },
       purple:{
         300: '#140F1A',

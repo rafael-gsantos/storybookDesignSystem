@@ -23,3 +23,6 @@ export default {
 
 
 export const Default: StoryObj<CheckboxProps> = {}
+
+
+//to able click in text to check the checkbox put a id value in from label in the checkbox tag
